@@ -5,3 +5,88 @@
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
+
+/* shared styles */
+
+.btn{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 40px;
+  background: linear-gradient(90deg, #ff3cac, #784ba0, #2b86c5);
+  box-shadow: 0 0 20px rgba(255, 60, 172, 0.6);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s ease;
+}
+.btn:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(255, 60, 172, 0.9);
+}
+
+/* header */
+header{
+  background-color: #1A0B2E;
+  color: white;
+
+}
+/* navBar */
+.navbar{
+  padding: 24px;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.logo span{
+  color: #ff009d;
+}
+
+.nav-items{
+  display: flex;
+  gap: 2rem;
+}
+
+
+
+.humburger{
+  display: none;
+}
+
+/* banner style */
+#banner{
+  background-image: url('/assets/hero-bg.png');
+  height: 600px;
+  width: 1600;
+  margin: 0 auto;
+}
+
+
+
+
+/* For small devise */
+@media screen and (max-width: 576px) {
+  
+  .nav-item, .nav-btn{
+    display: none;
+  }
+  .humburger{
+    display: block;
+  }
+}
+/* For medium devise */
+@media screen and  (min-width: 576) and (max-width: 992px) {
+  
+  
+}
