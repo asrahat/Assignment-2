@@ -8,6 +8,11 @@
 
 /* shared styles */
 
+.container{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 .btn{
   border: none;
   outline: none;
@@ -29,6 +34,12 @@
   box-shadow: 0 0 30px rgba(255, 60, 172, 0.9);
 }
 
+.section-title{
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
 /* header */
 header{
   background-color: #1A0B2E;
@@ -38,8 +49,6 @@ header{
 /* navBar */
 .navbar{
   padding: 24px;
-  max-width: 1300px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,15 +74,67 @@ header{
 }
 
 /* banner style */
-#banner{
-  background-image: url('/assets/hero-bg.png');
-  height: 600px;
-  width: 1600;
-  margin: 0 auto;
+/* #banner{
+  position: relative;
+  min-height: 100vh;
+  background-image: url("/assets/hero-bg.png") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .logo{
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  margin: 0 auto 20px;
+}
+
+.circle {
+  width: 100%;
+}
+
+.mic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10rem;
+  transform: translate(-50%, -50%);
+}
+ */
+
+
+ /* about section style */
+ #about{
+  background-color: #1A0B2E;
+ }
+
+ .about-content{
+  text-align: center;
+ }
+
+.about-heading .about-description{
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.8rem;
 }
 
 
-
+.podcast-record{
+  color: white;
+  border-top: 1px solid #8b8b8b;
+  margin-top: 5rem;
+  padding: 5rem 0rem;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.record h3{
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #00FF88;
+}
 
 /* For small devise */
 @media screen and (max-width: 576px) {
@@ -84,9 +145,28 @@ header{
   .humburger{
     display: block;
   }
+  .section-title{
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
 }
+
+
+.podcast-record{
+  grid-template-columns: repeat(2,1fr);
+}
+
+
+}
+
+
 /* For medium devise */
-@media screen and  (min-width: 576) and (max-width: 992px) {
+@media screen and  (min-width: 576px) and (max-width: 992px) {
   
+  .podcast-record{
+  grid-template-columns: repeat(3,1fr);
+}
+
+
   
 }
