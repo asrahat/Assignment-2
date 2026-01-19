@@ -12,13 +12,14 @@
 </head>
 <body class="inter-font">
     <!-- Header Start -->
-     <header class="">
+     <header class="bg-[#1A0B2E] text-white">
         <!-- navbar -->
-         <nav class="navbar container">
+         <nav class="navbar flex  justify-between items-center p-6 container">
             <h2 class="logo">
-                Tech<span class="">Wave</span>
+                <a href="#"><img src="assets/TechWave.png" alt=""></a>
             </h2>
-            <ul class="nav-items ">
+            
+            <ul class="nav-items flex gap-8">
                 <li class="nav-item"><a href="">About</a></li>
                 <li class="nav-item"><a href="">Episodes</a></li>
                 <li class="nav-item"><a href="">Host</a></li>
@@ -36,15 +37,6 @@
          <!-- banner -->
         
 
-    
-          <!-- <section id="banner">
-              <div class="badge">NEW</div>
-               <div class="logo">
-                     <img src="assets/hero-circle.png" alt="circle" class="circle">
-                     <img src="assets/microphone.png" alt="mic" class="mic">
-              </div>
-
-          </section> -->
          
      </header>
 
@@ -53,37 +45,42 @@
 
 
         <!-- about section -->
-         <section id="about">
-           <div class="about-content container">
-            <div class="about-heading">
+         <section class="bg-[#1A0B2E]">
+           <div class="text-center container">
+            <div class="">
              <h2 class="section-title">About The Podcast</h2>
-            <p class="about-description">
+            
+            <p class=" text-white text-xl leading-relaxed">
                 TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. <br>
 We break down complex topics into digestible insights, explore productivity strategies that actually work, <br>
 and share stories of personal growth from industry leaders.
             </p>
             <br>
-            <p class="about-description">
+            <p class=" text-white text-xl leading-relaxed">
 
 Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
 
            </div>
 
-            <div class="podcast-record">
+
+  
+
+            <div class="podcast-record text-white border-t-[#8b8b8b] mt-20 py-20 grid grid-cols-2 md:grid-cols-4">
+                
                 <div class="record">
-                    <h3>150K+</h3>
+                    <h3 class="text-5xl font-extrabold text-[#00FF88]">150K+</h3>
                     <p>MONTHLY LISTENERS</p>
                 </div>
                 <div class="record">
-                    <h3>200+</h3>
+                    <h3 class="text-5xl font-extrabold text-[#00FF88]">200+</h3>
                     <p>EPISODES PUBLISHED</p>
                 </div>
                 <div class="record">
-                    <h3>4.9<i class="fa-solid fa-star"></i></h3>
+                    <h3 class="text-5xl font-extrabold text-[#00FF88]">4.9<i class="fa-solid fa-star"></i></h3>
                     <p>AVERAGE RATING </p>
                 </div>
                 <div class="record">
-                    <h3>50+</h3>
+                    <h3 class="text-5xl font-extrabold text-[#00FF88]">50+</h3>
                     <p>INDUSTRY EXPERTS </p>
                 </div>
             
@@ -93,9 +90,9 @@ Join thousands of young professionals and tech enthusiasts who start their day w
          </section>
 
          <!-- why choose us -->
-          <section class="bg-[#230E3D]" >
+          <section class="bg-[#230E3D] py-28" >
             <div class="choose-content container">
-                <h2 class="section-title pt-28 mb-6">Why Chooes TechWave</h2>
+                <h2 class="section-title mb-6">Why Chooes TechWave</h2>
 
 
             <div class="features grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -107,10 +104,16 @@ Join thousands of young professionals and tech enthusiasts who start their day w
               text-white 
               shadow-lg 
               row-span-2
+              transform 
+         transition-all
+         duration-500
+         hover:shadow-[0_0_40px_rgba(168,85,247,0.4)]
+         hover:-translate-y-1
+         animate-fadeIn
               ">
     <img src="assets/headphone.png" alt="" class="w-11 my-6">
     <h2 class="text-lg font-semibold mb-2">Premium Audio Quality</h2>
-    <p class="text-sm text-gray-300 leading-relaxed">
+    <p class="text-sm text-gray-300 ">
      Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.
     </p>
   </div>
@@ -122,10 +125,16 @@ Join thousands of young professionals and tech enthusiasts who start their day w
               text-white 
               shadow-lg 
               col-span-2
+              transform 
+         transition-all
+         duration-500
+         hover:shadow-[0_0_40px_rgba(168,85,247,0.4)]
+         hover:-translate-y-1
+         animate-fadeIn
              ">
     <img src="assets/device.png" alt="" class="w-11 mb-4">
     <h2 class="text-lg font-semibold">Mobile Friendly</h2>
-    <p class="text-sm text-gray-300 leading-relaxed">Listen on the go with seamless mobile experience and offline downloads.
+    <p class="text-sm text-gray-300 ">Listen on the go with seamless mobile experience and offline downloads.
     </p>
   </div>
 
@@ -136,10 +145,16 @@ Join thousands of young professionals and tech enthusiasts who start their day w
               text-white 
               shadow-lg 
               col-span-2
+              transform 
+         transition-all
+         duration-500
+         hover:shadow-[0_0_40px_rgba(168,85,247,0.4)]
+         hover:-translate-y-1
+         animate-fadeIn
               ">
     <img src="assets/location.png" alt="" class="w-11 mb-4">
     <h2 class="text-lg font-semibold">Global Community</h2>
-    <p class="text-sm text-gray-300 leading-relaxed">
+    <p class="text-sm text-gray-300 ">
       Connect with tech enthusiasts from over 120 countries worldwide.
     </p>
   </div>
@@ -151,18 +166,31 @@ Join thousands of young professionals and tech enthusiasts who start their day w
               p-6 
               text-white 
               shadow-lg 
-              col-span-2">
+              col-span-2
+              transform 
+         transition-all
+         duration-500
+         hover:shadow-[0_0_40px_rgba(168,85,247,0.4)]
+         hover:-translate-y-1
+         animate-fadeIn">
     <img src="assets/exclusive.png" alt="" class="w-11 mb-4">
     <h2 class="text-lg font-semibold mb-2">Exclusive Interviews</h2>
-    <p class="text-sm text-gray-300 leading-relaxed">
+    <p class="text-sm text-gray-300 ">
       Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.
     </p>
   </div>
 
-  <div class="features-card bg-[#24104a] rounded-2xl p-6 text-white shadow-lg">
+  <div class="features-card bg-[#24104a] rounded-2xl p-6 text-white shadow-lg transform 
+         transition-all
+         duration-500
+         hover:shadow-[0_0_40px_rgba(168,85,247,0.4)]
+         hover:-translate-y-1
+         animate-fadeIn
+         
+         ">
     <img src="assets/resource.png" alt="" class="w-11 mb-4">
     <h2 class="text-lg font-semibold">Rich Resources</h2>
-    <p class="text-sm text-gray-300 leading-relaxed">Access show notes, transcripts, and additional learning materials for every episode.
+    <p class="text-sm text-gray-300 ">Access show notes, transcripts, and additional learning materials for every episode.
     </p>
   </div>
 
@@ -178,7 +206,13 @@ Join thousands of young professionals and tech enthusiasts who start their day w
 
             <div class="episode-items grid grid-cols-1 md:grid-cols-3 gap-4">
 
-                <div class="episode-card border rounded-2xl ">
+                <div class="episode-card border outline-0 rounded-2xl transform 
+         transition-all
+         duration-500
+         hover:shadow-[0_0_40px_rgba(168,85,247,0.4)]
+         hover:-translate-y-1
+         animate-fadeIn
+         ">
                     <iframe class="shadow-2xl border-0 outline-0 rounded-t-2xl w-full h-60" src="https://www.youtube.com/embed/i4laq6e_B6U?si=y1GKimLLpIdh9PEL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <div class="bg-[#250D44] space-y-4 p-4 ">
                         <h2 class="text-white text-2xl font-bold">Complete Guideline to be a web developer</h2>
@@ -187,7 +221,13 @@ Join thousands of young professionals and tech enthusiasts who start their day w
                     </div>
                 </div>
                 <!--  -->
-                <div class="episode-card border rounded-2xl">
+                <div class="episode-card outline-0 rounded-2xl transform 
+         transition-all
+         duration-500
+         hover:shadow-[0_0_40px_rgba(168,85,247,0.4)]
+         hover:-translate-y-1
+         animate-fadeIn
+          ">
                     <iframe class="shadow-2xl border-0 outline-0 rounded-t-2xl w-full h-60" src="https://www.youtube.com/embed/zOjov-2OZ0E?si=Wf6TGjNUcaRd6SMy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <div class="bg-[#250D44] space-y-4 p-4 h-fit">
                         <h2 class="text-white text-2xl font-bold">Introduction to Programming and Computer Science</h2>
@@ -196,7 +236,13 @@ Join thousands of young professionals and tech enthusiasts who start their day w
                     </div>
                 </div>
                 <!--  -->
-                <div class="episode-card border rounded-2xl">
+                <div class="episode-card border outline-0 rounded-2xl transform 
+         transition-all
+         duration-500
+         hover:shadow-[0_0_40px_rgba(168,85,247,0.4)]
+         hover:-translate-y-1
+         animate-fadeIn
+         ">
                    <iframe class="shadow-2xl border-0 outline-0 rounded-t-2xl w-full h-60" src="https://www.youtube.com/embed/JUwePydwbUI?si=1ebspM5p2jDc_vjw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <div class="bg-[#250D44] space-y-4 p-4 ">
                         <h2 class="text-white text-2xl font-bold">Is it possible to become a web developer in six months?</h2>
@@ -212,11 +258,128 @@ Join thousands of young professionals and tech enthusiasts who start their day w
 
            </section>
 
+
+           <!-- host section -->
+            <section class="bg-[#1A0B2E] py-28">
+                <div class=" container">
+                    <h2 class="section-title">Meet The Host</h2>
+                    
+
+                    <div
+  class="bg-[#250D44] px-10 py-12 rounded-2xl mt-4
+         flex flex-col 
+         md:flex-row
+         items-center
+          md:items-start
+         text-center
+          md:text-left
+         gap-6
+         transform 
+         transition-all
+         duration-500
+         hover:shadow-[0_0_40px_rgba(168,85,247,0.4)]
+         hover:-translate-y-1
+         animate-fadeIn
+         
+         ">
+
+ 
+  <img
+    src="assets/host.png"
+    alt=""
+    class=" rounded-full mx-auto md:mx-0
+           transition-transform duration-500
+           hover:scale-105">
+
+
+  <div class="host-content space-y-4 text-white max-w-xl">
+
+    <h2 class="text-4xl font-bold">
+      Alex Kumar
+    </h2>
+
+    <p class="text-sm leading-relaxed text-gray-300">
+      Tech entrepreneur, productivity expert, and lifelong learner. Alex has been
+      in the tech industry for over 10 years, working with startups and Fortune 500
+      companies. Through TechWave, Alex shares insights from industry leaders and
+      practical advice for anyone looking to grow in tech.
+    </p>
+
+   
+    <div class="host-link flex justify-center md:justify-start gap-4 pt-2">
+      <button class="border  border-[#533C72] cursor-pointer p-2 rounded-full
+                     hover:bg-[#533C72]
+                     hover:shadow-[0_0_15px_rgba(168,85,247,0.6)]
+                     transition duration-300">
+        <img src="assets/linkedin.png" alt="">
+      </button>
+
+      <button class="border border-[#533C72] cursor-pointer p-2 rounded-full
+                     hover:bg-[#533C72]
+                     hover:shadow-[0_0_15px_rgba(168,85,247,0.6)]
+                     transition duration-300">
+        <img src="assets/x.png" alt="">
+      </button>
+
+      <button class="border border-[#533C72] cursor-pointer p-2 rounded-full
+                     hover:bg-[#533C72]
+                     hover:shadow-[0_0_15px_rgba(168,85,247,0.6)]
+                     transition duration-300">
+        <img src="assets/instagram.png" alt="">
+      </button>
+
+      <button class="border border-[#533C72] cursor-pointer p-2 rounded-full
+                     hover:bg-[#533C72]
+                     hover:shadow-[0_0_15px_rgba(168,85,247,0.6)]
+                     transition duration-300">
+        <img src="assets/youtube.png" alt="">
+      </button>
+    </div>
+
+  </div>
+</div>
+
+
+                </div>
+            </section>
       </main>
 
-      <!-- footer Start -->
-       <footer>
+<!-- Footer start -->
+      <footer class="bg-[url('/assets/footer-bg.png')] w-full h-full bg-cover  bg-center ">
+ 
 
-       </footer>
+
+  <div class=" flex flex-col items-center justify-center text-center px-4 py-16">
+
+ 
+    <img src="assets/TechWave.png" alt="" class="w-52 mb-6">
+
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <a href="#" class="flex items-center justify-center gap-2 text-white">
+        <img src="assets/spotify.png" class="w-5"> Spotify
+      </a>
+      <a href="#" class="flex items-center justify-center gap-2 text-white">
+        <img src="assets/apple-podcast.png" class="w-5"> Apple Podcast
+      </a>
+      <a href="#" class="flex items-center justify-center gap-2 text-white">
+        <img src="assets/youtube-podcast.png" class="w-5"> YouTube
+      </a>
+      <a href="#" class="flex items-center justify-center gap-2 text-white">
+        <img src="assets/twitter.png" class="w-5"> Twitter
+      </a>
+    </div>
+
+    
+    <p class="text-gray-300 text-sm mt-8">
+      &copy 2026 TechWave Podcast. All rights reserved.
+    </p>
+
+  </div>
+</footer>
+
+
+
+
 </body>
 </html>
