@@ -36,6 +36,7 @@
 
 .section-title{
   font-size: 3rem;
+  text-align: center;
   font-weight: 800;
   color: #ffffff;
 }
@@ -136,6 +137,11 @@ header{
   color: #00FF88;
 }
 
+
+/* Why Choose */
+
+
+
 /* For small devise */
 @media screen and (max-width: 576px) {
   
@@ -155,7 +161,6 @@ header{
 .podcast-record{
   grid-template-columns: repeat(2,1fr);
 }
-
 
 }
 
