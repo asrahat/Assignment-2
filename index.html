@@ -10,7 +10,7 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 </head>
-<body class="inter-font">
+<body class="inter-font ">
     <!-- Header Start -->
      <header class="bg-[#1A0B2E] text-white">
         <!-- navbar -->
@@ -26,7 +26,19 @@
             </ul>
                 <div>
                     <img class="humburger" src="assets/hamburger-menu.png" alt="">
-                <button class="btn nav-btn">
+                <button class="border-none outline-none cursor-pointer
+         px-[30px] py-3
+         text-[18px] font-semibold text-white
+         rounded-full
+        bg-[linear-gradient(90deg,rgba(255,60,172,1),rgba(120,75,160,1),rgba(43,134,197,1))]
+         shadow-[0_0_20px_rgba(255,60,172,0.6)]
+         
+        
+         
+         flex items-center gap-2
+         transition-all duration-300 ease-in-out
+         hover:-translate-y-0.5
+         hover:shadow-[0_0_30px_rgba(255,60,172,0.9)] nav-btn">
                 Subscribe
                 <i class="fa-solid fa-arrow-right-long"></i>
 
@@ -35,32 +47,66 @@
             
          </nav>
          <!-- banner -->
+
+         <!-- Ekta div er moddhe duita div niben.
+First div e background image hisabe circle ta diben ar content hisabe microphone image ta.
+Ar second div e baki content, mane ekta heading, p ar buttons
+
+EKhon eder parent ke flex items center justify center korlei circle bg ta center e chole asbe
+
+Note: proper width ar margin padding use korle figma r moto position e asbe
+         -->
+
+         <section class="bg-[url('/assets/hero-bg.png')] min-h-[600px] md:min-h-[760px] w-full bg-no-repeat bg-cover bg-center pt-8">
+            <div class="flex flex-col justify-center items-center">
+                <div class="flex justify-center items-center flex-col">
+                  <img class="relative w-80 md:w-96" src="assets/hero-circle.png" alt="">
+                  <span class="absolute">
+                    <img class="relative" src="assets/microphone.png" alt="">
+                  <p class="transform 
+         transition-all
+         duration-500
+         shadow-[0_0_40px_rgba(168,85,247,0.4)]
+         animate-pulse
+        absolute bottom-48 left-36 md:left-36 md:bottom-60 border-0 px-4 py-2 rounded-3xl text-lg font-semibold bg-[#00FF88] text-white">New</p>
+                  </span>
+                </div>
+                
+                <div class="flex flex-col items-center space-y-4 mt-4">
+                  <h2 class="text-4xl md:text-6xl font-extrabold">TechWave</h2>
+                  <p class="text-[#FFFFFF] text-xs md:text-lg p-2">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                  <div class="flex items-center gap-6 text-center-center">
+                    <a href="https://open.spotify.com/" target="_blank">
+                      <button class="border-none outline-none cursor-pointer
+         px-7 py-3
+         text-xs md:text-lg font-semibold text-white
+         rounded-full
+        bg-[linear-gradient(90deg,rgba(255,60,172,1),rgba(120,75,160,1),rgba(43,134,197,1))]
+         shadow-[0_0_20px_rgba(255,60,172,0.6)]
+         
         
-
-         <section class="bg-[url('/assets/hero-bg.png')] min-h-fit w-full bg-no-repeat bg-cover bg-center">
-            <div class="flex justify-center items-center">
-                <img class="relative w-80 md:w-96" src="assets/hero-circle.png" alt="">
-
-                <img class="absolute" src="assets/microphone.png" alt="">
-                <p class="absolute top-24 left-3/6 border-0 p-4 rounded-full bg-amber-600 text-white">New</p>
-
-            </div>
-
-
-              <div class="mt-20">
-             <h2 class="section-title">About The Podcast</h2>
+         
+         flex items-center gap-2
+         transition-all duration-300 ease-in-out
+         hover:-translate-y-0.5
+         hover:shadow-[0_0_30px_rgba(255,60,172,0.9)]"><img src="assets/spotify.png" alt=""> Listen on Spotify</button>
+                    </a>
+                  <a href="#">
+                    <button class="py-3 px-8 border border-[#00FF88] rounded-3xl flex items-center gap-2 text-xs md:text-lg font-semibold text-[#00FF88] 
             
-            <p class=" text-white text-xl leading-relaxed">
-                TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. <br>
-We break down complex topics into digestible insights, explore productivity strategies that actually work, <br>
-and share stories of personal growth from industry leaders.
-            </p>
-            <br>
-            <p class=" text-white text-xl leading-relaxed">
+        cursor-pointer
+         shadow-[0_0_10px_rgba(0,255,136,0.4)]
+         hover:shadow-[0_0_30px_rgba(0,255,136,0.9)]
+         hover:-translate-y-0.5
+         transition-all duration-300
+                  "><img src="assets/message.png" alt=""> Subscribe</button>
+                  </a>
+                  </div>
+                </div>
+              </div>
 
-Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
 
-           </div>
+             
          </section>
 
          
@@ -91,7 +137,7 @@ Join thousands of young professionals and tech enthusiasts who start their day w
 
   
 
-            <div class="podcast-record text-white border-t-[#8b8b8b] mt-20 py-20 grid grid-cols-2 md:grid-cols-4">
+            <div class="podcast-record text-white border-t-[#8b8b8b] mt-20 py-20 grid gap-6 grid-cols-2 md:grid-cols-4">
                 
                 <div class="record">
                     <h3 class="text-5xl font-extrabold text-[#00FF88]">150K+</h3>
@@ -117,7 +163,7 @@ Join thousands of young professionals and tech enthusiasts who start their day w
 
          <!-- why choose us -->
           <section class="bg-[#230E3D] py-28" >
-            <div class="choose-content container">
+            <div class="choose-content container ">
                 <h2 class="section-title mb-6">Why Chooes TechWave</h2>
 
 
@@ -333,33 +379,41 @@ Join thousands of young professionals and tech enthusiasts who start their day w
 
    
     <div class="host-link flex justify-center md:justify-start gap-4 pt-2">
-      <button class="border  border-[#533C72] cursor-pointer p-2 rounded-full
+      <a  href="https://www.linkedin.com/" target="_blank">
+        <button class="border  border-[#533C72] cursor-pointer p-2 rounded-full
                      hover:bg-[#533C72]
                      hover:shadow-[0_0_15px_rgba(168,85,247,0.6)]
                      transition duration-300">
         <img src="assets/linkedin.png" alt="">
       </button>
+      </a>
 
-      <button class="border border-[#533C72] cursor-pointer p-2 rounded-full
+      <a  href="https://x.com/" target="_blank">
+        <button class="border border-[#533C72] cursor-pointer p-2 rounded-full
                      hover:bg-[#533C72]
                      hover:shadow-[0_0_15px_rgba(168,85,247,0.6)]
                      transition duration-300">
         <img src="assets/x.png" alt="">
       </button>
+      </a>
 
-      <button class="border border-[#533C72] cursor-pointer p-2 rounded-full
+     <a  href="https://www.instagram.com/" target="_blank">
+       <button class="border border-[#533C72] cursor-pointer p-2 rounded-full
                      hover:bg-[#533C72]
                      hover:shadow-[0_0_15px_rgba(168,85,247,0.6)]
                      transition duration-300">
         <img src="assets/instagram.png" alt="">
       </button>
+     </a>
 
-      <button class="border border-[#533C72] cursor-pointer p-2 rounded-full
+      <a href="https://www.youtube.com/"  target="_blank">
+        <button class="border border-[#533C72] cursor-pointer p-2 rounded-full
                      hover:bg-[#533C72]
                      hover:shadow-[0_0_15px_rgba(168,85,247,0.6)]
                      transition duration-300">
         <img src="assets/youtube.png" alt="">
       </button>
+      </a>
     </div>
 
   </div>
@@ -371,7 +425,8 @@ Join thousands of young professionals and tech enthusiasts who start their day w
       </main>
 
 <!-- Footer start -->
-      <footer class="bg-[url('/assets/footer-bg.png')] w-full h-full bg-cover  bg-center ">
+ <!-- min-h-[600px] md:min-h-[760px] w-full bg-no-repeat bg-cover bg-center -->
+      <footer class="bg-[url('/assets/footer-bg.png')] w-full min-h-[206px] md:min-h-[412px] bg-no-repeat bg-cover bg-center pt-20">
  
 
   <div class=" flex flex-col items-center justify-center text-center px-4 py-16">
@@ -381,16 +436,28 @@ Join thousands of young professionals and tech enthusiasts who start their day w
 
 
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-      <a href="#" class="flex items-center justify-center gap-2 text-white">
+      <a href="https://open.spotify.com/" target="_blank" class="flex items-center justify-center gap-2 text-white
+         hover:text-[#00FF88]
+         hover:drop-shadow-[0_0_12px_rgba(0,255,136,1)]
+         transition-all duration-300">
         <img src="assets/spotify.png" class="w-5"> Spotify
       </a>
-      <a href="#" class="flex items-center justify-center gap-2 text-white">
+      <a href="https://www.apple.com/apple-podcasts/" target="_blank"  class="flex items-center justify-center gap-2 text-white
+         hover:text-[#00FF88]
+         hover:drop-shadow-[0_0_12px_rgba(0,255,136,1)]
+         transition-all duration-300">
         <img src="assets/apple-podcast.png" class="w-5"> Apple Podcast
       </a>
-      <a href="#" class="flex items-center justify-center gap-2 text-white">
+      <a href="https://www.youtube.com/" target="_blank"  class="flex items-center justify-center gap-2 text-white
+         hover:text-[#00FF88]
+         hover:drop-shadow-[0_0_12px_rgba(0,255,136,1)]
+         transition-all duration-300">
         <img src="assets/youtube-podcast.png" class="w-5"> YouTube
       </a>
-      <a href="#" class="flex items-center justify-center gap-2 text-white">
+      <a href="https://x.com/" target="_blank"  class="flex items-center justify-center gap-2 text-white
+         hover:text-[#00FF88]
+         hover:drop-shadow-[0_0_12px_rgba(0,255,136,1)]
+         transition-all duration-300">
         <img src="assets/twitter.png" class="w-5"> Twitter
       </a>
     </div>
